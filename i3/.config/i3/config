@@ -89,7 +89,7 @@ bindsym $mod+r mode "resize"
 # --- GAPS ----
 
 gaps inner 4
-gaps outer 2
+gaps outer 0
  
 default_border pixel 3
 default_floating_border pixel 2
@@ -119,7 +119,6 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 # --- Picom ---
 exec --no-startup-id picom
-
 
 # --- dunst ---
 exec --no-startup-id dunst

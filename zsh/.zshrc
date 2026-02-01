@@ -111,3 +111,7 @@ alias ls='exa --icons --group-directories-first'
 alias ll='exa -l --icons --group-directories-first'
 alias la='exa -la --icons --group-directories-first'
 alias tree='exa --tree --icons'
+
+eval "$(ssh-agent -s)" >/dev/null
+ssh-add ~/.ssh/id_ed25519 2>/dev/null
+
