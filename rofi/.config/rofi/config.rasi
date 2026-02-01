@@ -1,0 +1,22 @@
+configuration {
+  show-icons: true;
+  font: "JetBrains Mono 11";
+  location: 0;
+}
+
+* {
+  bg: #0d0d0d;
+  fg: #eaeaea;
+  accent: #7aa2f7;
+}
+
+window {
+  background-color: @bg;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+element selected {
+  background-color: @accent;
+  text-color: @bg;
+}

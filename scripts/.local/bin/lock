@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+IMG=/tmp/lock.png
+scrot $IMG
+convert $IMG -blur 0x8 $IMG
+
+i3lock \
+  --image=$IMG \
+  --clock \
+  --indicator \
+  --ring-color=7aa2f7 \
+  --inside-color=00000088 \
+  --keyhl-color=7aa2f7 \
+  --line-color=00000000 \
+  --separator-color=00000000 \
+  --date-color=eaeaea \
+  --time-color=eaeaea

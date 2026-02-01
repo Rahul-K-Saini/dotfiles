@@ -1,0 +1,14 @@
+[window]
+padding = { x = 10, y = 10 }
+opacity = 0.85
+dynamic_title = true
+
+[font]
+size = 8
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Regular"
+
+[colors.primary]
+background = "#0d0d0d"
+foreground = "#eaeaea"
