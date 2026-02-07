@@ -87,7 +87,6 @@ bindsym $mod+r mode "resize"
 # }
 
 # --- GAPS ----
-
 gaps inner 4
 gaps outer 0
  
@@ -147,3 +146,8 @@ bindsym $mod+Shift+v exec --no-startup-id rofi -modi "clipboard:greenclip print"
 # --- Change wallpaper ---
 bindsym $mod+Shift+w exec --no-startup-id ~/.local/bin/set-wallpaper
 exec --no-startup-id ~/.local/bin/set-wallpaper
+
+
+# --- File Manager ---
+bindsym $mod+t exec thunar
+
