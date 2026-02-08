@@ -50,8 +50,7 @@ bindsym $mod+e layout toggle split
 set $ws1 "1:term"
 set $ws2 "2:web"
 set $ws3 "3:code"
-set $ws4 "4:files"
-set $ws5 "5:misc"
+set $ws5 "4:misc"
 
 bindsym $mod+1 workspace $ws1
 bindsym $mod+2 workspace $ws2
@@ -163,3 +162,5 @@ bindsym Shift+Print exec --no-startup-id flameshot full -c
 exec --no-startup-id flameshot
 
 exec --no-startup-id xsettingsd &
+
+exec --no-startup-id libinput-gestures-setup start
