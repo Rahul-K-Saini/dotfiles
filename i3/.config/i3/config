@@ -117,13 +117,13 @@ floating_modifier $mod
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 # --- Picom ---
-exec --no-startup-id picom
+exec --no-startup-id picom --config ~/.config/picom/picom.conf
 
 # --- dunst ---
 exec --no-startup-id dunst
 
 # --- lock ---
-bindsym $mod+x exec ~/.local/bin/lock
+bindsym $mod+x exec --no-startup-id betterlockscreen -l
 bindsym $mod+p exec ~/.local/bin/powermenu
 
 # --- feh ---
@@ -151,3 +151,15 @@ exec --no-startup-id ~/.local/bin/set-wallpaper
 # --- File Manager ---
 bindsym $mod+t exec thunar
 
+# Screenshot - interactive
+bindsym Print exec --no-startup-id flameshot gui
+
+# Screenshot - full screen (save)
+bindsym $mod+Print exec --no-startup-id flameshot full -p ~/Pictures/Screenshots
+
+# Screenshot - full screen (clipboard)
+bindsym Shift+Print exec --no-startup-id flameshot full -c
+
+exec --no-startup-id flameshot
+
+exec --no-startup-id xsettingsd &

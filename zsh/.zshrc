@@ -7,10 +7,10 @@ plugins=(git zsh-autosuggestions)
 source $ZSH/oh-my-zsh.sh
 
 # --- Aliases ---
-alias i3conf="vim ~/rowl-i3-dotfiles/i3/.config/i3/config" 
-alias terconf="vim ~/rowl-i3-dotfiles/alacritty/.config/alacritty/alacritty.toml" 
-alias zshconf="vim ~/rowl-i3-dotfiles/zsh/.zshrc"
-alias polybarconf="vim ~/rowl-i3-dotfiles/polybar/.config/polybar"
+alias i3conf="nvim ~/rowl-i3-dotfiles/i3/.config/i3/config" 
+alias terconf="nvim ~/rowl-i3-dotfiles/alacritty/.config/alacritty/alacritty.toml" 
+alias zshconf="nvim ~/rowl-i3-dotfiles/zsh/.zshrc"
+alias polybarconf="nvim ~/rowl-i3-dotfiles/polybar/.config/polybar"
 alias ls='exa --icons --group-directories-first'
 alias ll='exa -l --icons --group-directories-first'
 alias la='exa -la --icons --group-directories-first'
