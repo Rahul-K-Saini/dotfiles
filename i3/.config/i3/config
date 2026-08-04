@@ -162,3 +162,5 @@ exec --no-startup-id flameshot
 exec --no-startup-id xsettingsd &
 
 exec --no-startup-id libinput-gestures-setup start
+
+exec --no-startup-id blueman-applet" >> ~/.config/i3/config

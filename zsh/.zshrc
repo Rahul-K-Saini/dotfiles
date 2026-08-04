@@ -16,9 +16,22 @@ alias ll='exa -l --icons --group-directories-first'
 alias la='exa -la --icons --group-directories-first'
 alias tree='exa --tree --icons'
 alias cat='bat'
+alias projects='nvim ~/me/code/projects'
+alias leetcode='nvim ~/me/code/DSA/leetcode'
+alias dsa='nvim ~/me/code/DSA/data-structure'
 
-eval "$(ssh-agent -s)" >/dev/null
-ssh-add ~/.ssh/id_ed25519 2>/dev/null
+# eval "$(ssh-agent -s)" >/dev/null
+# ssh-add ~/.ssh/id_ed25519 2>/dev/null
 
 # env vars
 export intellij="~/Downloads/idea-IU-253.30387.90/bin"
+export PATH=$HOME/.local/bin:$PATH
+export PATH=$HOME/.config/emacs/bin:$PATH
+export EMACS="$HOME/.config/emacs/bin/doom.sh"
+
+# bun completions
+[ -s "/home/rahul/.bun/_bun" ] && source "/home/rahul/.bun/_bun"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
